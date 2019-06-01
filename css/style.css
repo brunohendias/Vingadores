@@ -1,15 +1,11 @@
 body{
   font-family: Arial,Helvetica, sans-serif;
 }
-.logo{
-  margin-top: 60px;
-}
 .iron-man{
   height: 150px;
 }
 .card{
-  width: 16rem;
-  border-radius: 10px;
+  width: 14rem;
   background-color: #555;
   color: white;
 }
@@ -23,7 +19,7 @@ body{
   padding: 0;
   margin: 0;
 }
-.span {
+.barra {
   display: block;
   position: absolute;
   top: 0;

@@ -18,13 +18,14 @@
   </head>
 
   <body id="page-top" class="bg-dark">
-            <!-- MENU -->
+
+    <!-- MENU -->
     <nav class="navbar navbar-expand-sm fixed-top navbar-light bg-dark">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ml-auto mr-auto">
+      <div class="navbar-collapse collapse" id="menu">
+        <ul class="navbar-nav mx-auto">
           <li class="nav-item active">
             <a class="nav-link js-scroll-trigger text-light" href="#logo">Capa</a>
           </li>
@@ -37,16 +38,17 @@
         </ul>
       </div>
     </nav>
-            <!-- CARDS -->
-    <div class="logo">
+
+    <!-- LOGO -->
+    <div class="my-5">
       <img src="img/avengers.jpg" id="logo" class="img-fluid">
     </div>
-    <div class="container-fluid my-5 font-italic text-center" id="character">
+
+    <!-- CARDS -->
+    <div class="container font-italic text-center" id="character">
       <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-10">
-          <div class="card-group">
-            <div class="col-sm-6 col-md-4">
+        <div class="card-group m-auto">
+          <div class="col-sm-6 col-md-4 mb-4">
             <div class="card h-100">
               <img src="./img/thanos.jpg" class="card-img-top" alt="...">
               <h4 class="card-title">Thanos</h4>
@@ -54,8 +56,8 @@
                   <p class="card-text">Thanos é um personagem fictício, um supervilão inspirado em Thanatos. Ele aparece nas histórias em quadrinhos publicadas pela Marvel Comics e é considerado uma grande ameaça do Universo Marvel.</p>
               </div>
             </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4">
             <div class="card h-100">
               <img src="./img/iron.jpg" class="card-img-top" alt="...">
               <h4 class="card-title">Homem de Ferro</h4>
@@ -63,8 +65,8 @@
                 <p class="card-text">Homem de Ferro é um personagem fictício dos quadrinhos publicados pela Marvel Comics. Sua identidade verdadeira é a do empresário e bilionário Tony Stark, que usa armaduras de alta tecnologia no combate ao crime.</p>
               </div>
             </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4">
             <div class="card">
               <img src="./img/capitao_america.jpg" class="card-img-top" alt="...">
               <h4 class="card-title">Capitão America</h4>
@@ -72,50 +74,40 @@
                 <p class="card-text">Capitão América é um super-herói de histórias em quadrinhos americanos publicado pela Marvel Comics. Criado por Joe Simon e Jack Kirby, o primeiro personagem apareceu em Captain America Comics # 1 da Timely Comics, antecessora da Marvel Comics</p>
               </div>
             </div>
-            </div>
-          </div>
-        </div> 
-        <div class="col-lg-1"></div>
-      </div>
-    </div>
-
-    <div class="container-fluid text-center mb-5 fundo text-dark" id="form" name="form">
-      <span class="span bg-dark"></span>
-      <div class=" col-sm-2 col-md-2"></div>
-        <div class="container col-sm-8 col-md-8 p-5 form bg-light">
-        <h2>Formulário</h2>
-        <div class="row">
-          <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-2"></div>
-                <div class="col-md-8">
-                             <!-- FORMULÁRIO -->
-                  <form action="#" id="form_message" name="form_message">
-                    <div class="form-row">
-                      <span id="enviado"></span>
-                      <div class="form-group col-sm-6">
-                        <input type="text" class="form-control" id="name" name="name" minlength="4" value="" pattern="[a-zA-Z]+$" title="Apenas letras" required placeholder="Nome">
-                      </div>
-                      <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" id="email" name="email" value="" required placeholder="Email">
-                        <small id="emailHelp" class="form-text text-muted"></small>
-                      </div>
-                      <div class="form-group col-sm-12">
-                        <textarea id="msg" rows="5" class="w-100 form-control" required minlength="5" placeholder="Mensagem"></textarea>
-                      </div>
-                    </div>
-                      <button type="submit" class="btn btn-dark float-left">Enviar</button>
-                  </form>
-                </div>
-              <div class="col-md-2"></div>
-            </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-2 col-md-2"></div>
     </div>
-		
+
+    <!-- FORMULÁRIO -->
+    <div class="container-fluid m-auto fundo" id="form" name="form">
+      <span class="barra bg-dark"></span>
+      <div class="container p-5 form bg-light">
+        <h2 class="text-center">Formulário</h2>
+        <div class="row">
+          <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="row"> 
+          <form action="#" class="m-auto" id="form_message" name="form_message">
+            <div class="form-row">
+              <div class="form-group col-sm-6">
+                <input type="text" class="form-control" id="name" name="name" minlength="4" pattern="[a-zA-Z]+$" title="Apenas letras" required placeholder="Nome">
+              </div>
+              <div class="form-group col-sm-6">
+                <input type="email" class="form-control" id="email" name="email" required placeholder="Email">
+                <small id="emailHelp" class="form-text text-muted"></small>
+              </div>
+              <div class="form-group col-sm-12">
+                <textarea id="msg" rows="5" class="form-control" required minlength="5" placeholder="Mensagem"></textarea>
+              </div>
+            </div>
+              <button type="submit" class="btn btn-dark float-left">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <!--Bootstrap core JavaScript-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
